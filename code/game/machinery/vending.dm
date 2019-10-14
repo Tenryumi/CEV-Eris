@@ -1031,7 +1031,7 @@
 //This one's from bay12
 /obj/machinery/vending/cart
 	name = "PTech"
-	desc = "PDAs and hardware."
+	desc = "A vendor that dispenses PDAs and PDA accessories."
 	product_slogans = "PDAs for everyone!"
 	icon_state = "cart"
 	icon_deny = "cart-deny"

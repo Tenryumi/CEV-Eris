@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/hivebot
 	name = "One Star Autonomous Drone"
-	desc = "Old machine of long time fallen empire. Looks like its just attack everything on sight."
+	desc = "An old machine of an empire fallen long ago. Commonly known for attacking anything and everything in sight."
 	icon = 'icons/mob/hivebot.dmi'
 	icon_state = "melee"
 	icon_dead = "melee_broken"
@@ -8,7 +8,7 @@
 	maxHealth = 40
 	melee_damage_lower = 5
 	melee_damage_upper = 13
-	attacktext = "clawed"
+	attacktext = "mauls"
 	projectilesound = 'sound/weapons/Laser.ogg'
 	projectiletype = /obj/item/projectile/beam/drone
 	faction = "hivebot"

@@ -23,6 +23,7 @@ var/global/list/default_medbay_channels = list(
 /obj/item/device/radio
 	icon = 'icons/obj/radio.dmi'
 	name = "station bounced radio"
+	desc = "An emergency device used for remote communication when it's otherwise impossible."
 	suffix = "\[3\]"
 	icon_state = "walkietalkie"
 	item_state = "walkietalkie"

@@ -270,7 +270,7 @@
 
 /mob/living/simple_animal/hostile/hivemind/bomber
 	name = "probe"
-	desc = "This hovering cyborg emits a faint smell of welding fuel."
+	desc = "This hovering cyborg has a faint smell of welding fuel."
 	icon_state = "bomber"
 	density = 0
 	speak_chance = 3
@@ -402,14 +402,14 @@
 
 /mob/living/simple_animal/hostile/hivemind/himan
 	name = "human"
-	desc = "Once a man, now metal plates and tubes weave in and out of their oozing sores."
+	desc = "Where there was once a man, there now stands a bipedal construct of flesh, metal plates  tubes weaving in and out of oozing sores. He has a set of serrated claws on his hands."
 	icon_state = "himan"
 	icon_dead = "himan-dead"
 	health = 120
 	maxHealth = 120
 	melee_damage_lower = 20
 	melee_damage_upper = 25
-	attacktext = "slashes with claws"
+	attacktext = "slashes"
 	malfunction_chance = 10
 	mob_size = MOB_MEDIUM
 	speed = 8
@@ -421,19 +421,21 @@
 
 	speak = list(
 				"The dreams. The dreams.",
-				"Nothing hurts anymore.",
-				"Pain feels good now. Its like I've been rewired.",
-				"I wanted to cry at first, but I can't.",
-				"They took away all misery.",
-				"This isn't so bad. This isn't so bad."
+				"Nothing hurts any more.",
+				"Pain feels good now. Its like morphine.",
+				"I wanted to cry at first, but I can't. I don't have to any more. I'm happy.",
+				"They freed us from misery.",
+				"This isn't so bad. This isn't so bad.",
+				"Everything is fine. Everything is okay. I'm going to be fine and okay. I am fine and okay."
 				)
 	target_speak = list(
-						"Don't try and fix me! We love this!",
-						"Just make it easy on yourself!",
+						"Don't put us back in that prison of flesh! We are happy!",
+						"Just make this easy for yourself!",
 						"Stop fighting progress!",
 						"Join us! Receive these gifts!",
+						"They brought us to utopia! Come with us!",
 						"Yes! Hit me! It feels fantastic!",
-						"Come on coward, take a swing!"
+						"Come on coward, take a swing! Hit me! DO IT!"
 						)
 
 
@@ -488,7 +490,7 @@
 
 //Shriek stuns our victims and make them deaf for a while
 /mob/living/simple_animal/hostile/hivemind/himan/special_ability()
-	visible_emote("screams!")
+	visible_emote("shrieks loudly!")
 	playsound(src, 'sound/hallucinations/veryfar_noise.ogg', 90, 1)
 	for(var/mob/living/victim in view(src))
 		if(isdeaf(victim))

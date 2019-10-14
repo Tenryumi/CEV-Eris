@@ -154,11 +154,11 @@
 						injtime = injtime * 2
 						var/obj/item/organ/external/affected = H.get_organ(BP_CHEST)
 						if(BP_IS_ROBOTIC(affected))
-							to_chat(user, SPAN_WARNING("Injection port on [target]'s suit is refusing your [src]."))
+							to_chat(user, SPAN_WARNING("The injection port on [target]'s suit is refusing your [src]."))
 							// I think rig is advanced enough for this, and people will learn what causes this error
 							if(RIG)
 								playsound(src.loc, 'sound/machines/buzz-two.ogg', 30, 1 -3)
-								RIG.visible_message("\icon[RIG]\The [RIG] states \"Attention: User of this suit appears to be synthetic origin\".")
+								RIG.visible_message("\icon[RIG]\The [RIG] states \"Attention: The occupant of this suit is of synthetic origin\".")
 							return
 					// check without message
 					else if(!H.can_inject(user, FALSE))
@@ -204,10 +204,10 @@
 							var/pain = rand(min(30,affecting.get_damage()), max(affecting.get_damage() + 30,60) - user.stats.getStat(STAT_BIO))
 							H.pain(affecting, pain)
 							if(user != H)
-								to_chat(H, "<span class='[pain > 50 ? "danger" : "warning"]'>\The [user]'s amateur actions caused you [pain > 50 ? "alot of " : ""]pain.</span>")
-								to_chat(user, SPAN_WARNING("Your amateur actions caused [H] [pain > 50 ? "alot of " : ""]pain."))
+								to_chat(H, "<span class='[pain > 50 ? "danger" : "warning"]'>\The [user]'s unskilled attempt causes you [pain > 50 ? "alot of " : ""]pain.</span>")
+								to_chat(user, SPAN_WARNING("Your unskilled attempt causes [H] [pain > 50 ? "alot of " : ""]pain."))
 							else
-								to_chat(user, "<span class='[pain > 50 ? "danger" : "warning"]'>Your amateur actions caused you [pain > 50 ? "alot of " : ""]pain.</span>")
+								to_chat(user, "<span class='[pain > 50 ? "danger" : "warning"]'>Your unskilled attempt causes you [pain > 50 ? "alot of " : ""]pain.</span>")
 				else
 					to_chat(target, SPAN_NOTICE("You feel a tiny prick!"))
 			else
@@ -264,7 +264,7 @@
 
 		if (target != user && H.getarmor(target_zone, ARMOR_MELEE) > 5 && prob(50))
 			for(var/mob/O in viewers(world.view, user))
-				O.show_message(text("\red <B>[user] tries to stab [target] in \the [hit_area] with [src.name], but the attack is deflected by armor!</B>"), 1)
+				O.show_message(text("\red <B>[user] tries to stab [target] in \the [hit_area] with [src.name], but the attack is deflected by their armor!</B>"), 1)
 			user.remove_from_mob(src)
 			qdel(src)
 
@@ -322,22 +322,22 @@
 
 /obj/item/weapon/reagent_containers/syringe/inaprovaline
 	name = "syringe (inaprovaline)"
-	desc = "Contains inaprovaline - used to stabilize patients."
+	desc = "A syringe containing inaprovaline, a medicinal chemical that stabilizes patients in critical condition."
 	preloaded_reagents = list("inaprovaline" = 15)
 
 /obj/item/weapon/reagent_containers/syringe/antitoxin
 	name = "syringe (anti-toxin)"
-	desc = "Contains anti-toxins."
+	desc = "A syringe containing toxin-purging chemicals."
 	preloaded_reagents = list("anti_toxin" = 15)
 
 /obj/item/weapon/reagent_containers/syringe/antiviral
 	name = "syringe (spaceacillin)"
-	desc = "Contains antiviral agents."
+	desc = "A syringe containing virus-purging antibodies."
 	preloaded_reagents = list("spaceacillin" = 15)
 
 /obj/item/weapon/reagent_containers/syringe/drugs
 	name = "syringe (drugs)"
-	desc = "Contains aggressive drugs meant for torture."
+	desc = "A syringe containing a cruel, sadistic mix of painful chemicals intended for torture victims."
 	preloaded_reagents = list("space_drugs" = 5, "mindbreaker" = 5, "cryptobiolin" = 5)
 
 /obj/item/weapon/reagent_containers/syringe/ld50_syringe/choral

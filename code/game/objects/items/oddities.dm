@@ -67,7 +67,7 @@
 //Common - you can find those everywhere
 /obj/item/weapon/oddity/common/blueprint
 	name = "strange blueprint"
-	desc = "There's no telling what this design is supposed to be. Whatever could be built from this likely wouldn't work."
+	desc = "Whoever made this blueprint clearly had no idea what they were doing. The design is impossible to follow and completely impractical. Even an amateur could tell that the machine it details would never work in practice."
 	icon_state = "blueprint"
 	oddity_stats = list(
 		STAT_COG = 5,
@@ -76,7 +76,7 @@
 
 /obj/item/weapon/oddity/common/coin
 	name = "strange coin"
-	desc = "It appears to be more of a collectible than any sort of actual currency. What metal it's made from seems to be a mystery."
+	desc = "It appears to be more of a collectible than any sort of actual currency. Strangely enough, it's made from an unidentifiable metal."
 	icon_state = "coin"
 	oddity_stats = list(
 		STAT_ROB = 5,
@@ -85,7 +85,7 @@
 
 /obj/item/weapon/oddity/common/photo_landscape
 	name = "alien landscape photo"
-	desc = "There is some ire about the planet in this photograph."
+	desc = "The arid landscape in this photo seems hostile and dangerous."
 	icon_state = "photo_landscape"
 	oddity_stats = list(
 		STAT_COG = 5,
@@ -103,7 +103,7 @@
 
 /obj/item/weapon/oddity/common/photo_eyes
 	name = "observer photo"
-	desc = "Just looking at this photo sparks a primal fear in your heart."
+	desc = "Looking at this photo fills you with anxiety..."
 	icon_state = "photo_corridor"
 	oddity_stats = list(
 		STAT_ROB = 6,
@@ -113,7 +113,7 @@
 
 /obj/item/weapon/oddity/common/old_newspaper
 	name = "old newspaper"
-	desc = "It contains a report on some old and strange phenomenon. Maybe it's lies, maybe it's corporate experements gone wrong."
+	desc = "It contains a report on some old and strange phenomena. Was this just rumormilling, or corporate experiments gone horribly wrong?"
 	icon_state = "old_newspaper"
 	oddity_stats = list(
 		STAT_MEC = 4,
@@ -123,7 +123,7 @@
 
 /obj/item/weapon/oddity/common/paper_crumpled
 	name = "turn-out page"
-	desc = "This ALMOST makes sense."
+	desc = "The text in this page is ALMOST legible through the folds and crumples."
 	icon_state = "paper_crumpled"
 	oddity_stats = list(
 		STAT_MEC = 6,
@@ -133,7 +133,7 @@
 
 /obj/item/weapon/oddity/common/paper_omega
 	name = "collection of obscure reports"
-	desc = "Even the authors seem to be rather skeptical about their findings. Yet they are not connected to each other, but results are simular."
+	desc = "Filling these pages is a collection of strange reports by different authors, most of them skeptical about thier findings. Despite this each of their reports are similar in nature, and their findings line up closely with each other..."
 	icon_state = "paper_omega"
 	oddity_stats = list(
 		STAT_MEC = 8,
@@ -143,7 +143,7 @@
 
 /obj/item/weapon/oddity/common/book_eyes
 	name = "observer book"
-	desc = "This book details the information on some cyber creatures. Who did this, how this is even possible?"
+	desc = "This book is structured like an encyclopedia, giving details about artificial creatures created with cybernetic technology. The level of scientific detail put into the writing about them is staggering, almost as if these creatures were real..."
 	icon_state = "book_eyes"
 	oddity_stats = list(
 		STAT_ROB = 9,
@@ -153,7 +153,7 @@
 
 /obj/item/weapon/oddity/common/book_omega
 	name = "occult book"
-	desc = "Most of the stories in this book seem to be the writing of mad men. But at least the stories are interesting."
+	desc = "Written into the pages of this tome is absolute madness manifested as vaguely cohesive words, telling stories about worlds and events beyond the comprehension of our simple minds. It's certainly an interesting read at least."
 	icon_state = "book_omega"
 	oddity_stats = list(
 		STAT_BIO = 6,
@@ -172,7 +172,7 @@
 
 /obj/item/weapon/oddity/common/old_money
 	name = "old money"
-	desc = "It's not like organization that issues this exist now."
+	desc = "Deprecated currency. Would any organization even accept these any more?"
 	icon_state = "old_money"
 	oddity_stats = list(
 		STAT_ROB = 4,
@@ -181,7 +181,7 @@
 
 /obj/item/weapon/oddity/common/healthscanner
 	name = "odd healthscanner"
-	desc = "It's broken and stuck on some really strange readings. Was this even human?"
+	desc = "It's fractured and worn away from neglect and time. Its display is stuck showing some incredibly bizarre readings. What did it scan? Was it even human...?"
 	icon_state = "healthscanner"
 	item_state = "electronic"
 	oddity_stats = list(
@@ -191,7 +191,7 @@
 
 /obj/item/weapon/oddity/common/old_pda
 	name = "broken pda"
-	desc = "An old Nanotrasen era PDA. These were issued to their employees all throughout the galaxy."
+	desc = "An old Nanotrasen-era PDA. In older times, these were standard issue for all NT employees throughout the galaxy."
 	icon_state = "old_pda"
 	item_state = "electronic"
 	oddity_stats = list(
@@ -210,7 +210,7 @@
 
 /obj/item/weapon/oddity/common/teddy
 	name = "teddy bear"
-	desc = "He will there for you, im tough times."
+	desc = "So long as you hold him tight and keep him close, he will give you comfort and security."
 	icon_state = "teddy"
 	oddity_stats = list(
 		STAT_ROB = 7,
@@ -220,7 +220,7 @@
 
 /obj/item/weapon/oddity/common/old_knife
 	name = "old knife"
-	desc = "Is this blood older then you? You can't tell, and will never know."
+	desc = "The dried blood on the dulled edge of this knife almost seems older than the bladde itself. How old is it? You will probably never know the answer."
 	icon_state = "old_knife"
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 5)
@@ -239,7 +239,7 @@
 
 /obj/item/weapon/oddity/common/old_id
 	name = "old id"
-	desc = "There is story behind this name. Untold, and cruel fate."
+	desc = "There is a story behind this name. One that will likely remain untold for all time, but given its condition and location it's easy to tell that this story didn't have a happy ending."
 	icon_state = "old_id"
 	oddity_stats = list(
 		STAT_VIG = 9,
@@ -247,7 +247,7 @@
 
 /obj/item/weapon/oddity/common/old_radio
 	name = "old radio"
-	desc = "Close your eyes, bring it closer and listen. You can almost hear it, in the edge of your consciousness. The World is ticking."
+	desc = "Close your eyes, bring it closer and listen. You can almost hear it, in the edge of your consciousness. The world is ticking."
 	icon_state = "old_radio"
 	oddity_stats = list(
 		STAT_COG = 9,
@@ -256,7 +256,7 @@
 
 /obj/item/weapon/oddity/common/paper_bundle
 	name = "paper bundle"
-	desc = "Somewhere there, there is a truth, hidden under all of this scrap."
+	desc = "Somewhere beneath all of these scraps, there is truth."
 	icon_state = "paper_bundle"
 	oddity_stats = list(
 		STAT_BIO = 6,
